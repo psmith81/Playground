@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Playground</title>
-        <link rel="stylesheet" href="./playground.css" />
-    </head>
-    <body>
-        <h2>P's Playground</h2>
-        <p>Where learning happens.</p>
-    </body>
+
+<head>
+    <title>P's Playground</title>
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="./playground.css" />
+</head>
+
+<body>
+    <label classs="inputLabel" for="NumVal">Numeric Value: </label> <input type="text" id="NumVal" name="NumVal" onchange="intake(this.value)" />
+    <button class="button" type="button" onclick="intake(NumVal.value)">Calculate</button> <br />
+
+    <label class="inputLabel" for="Results">Results: </label><span id="Results">---</span>
+</body>
+
 </html>
