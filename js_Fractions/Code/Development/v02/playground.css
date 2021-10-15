@@ -27,7 +27,7 @@ td {
 
 /* CLASSES */
 .inputLabel {
-    width: 100px;
+    width: 140px;
     display: inline-block;
 }
 
@@ -59,4 +59,12 @@ td {
     border-radius: 515px;
     display: inline-block;
     
+}
+
+.result {
+    background-color: #ffffff;
+    border-left: 3px solid #362453;
+    padding: 2px 7px 2px 7px;
+    display: inline-block;
+    min-width: 150px;
 }

@@ -3,15 +3,19 @@
 
 <head>
     <title>P's Playground</title>
+    <!--<script type="module" >import { decToFraction } from "./fraction.mjs";</script>-->
+    <script src="fraction.js"></script>
     <script src="functions.js"></script>
     <link rel="stylesheet" href="./playground.css" />
 </head>
 
 <body>
-    <label classs="inputLabel" for="NumVal">Numeric Value: </label> <input type="text" id="NumVal" name="NumVal" onchange="intake(this.value)" />
+    <label class="inputLabel" for="FracVal">Fraction: </label> <input type="number" id="FracVal" value="8" /><br />
+    <label class="inputLabel" for="NumVal">Numeric Value: </label> <input type="text" id="NumVal" name="NumVal" onchange="intake(this.value)" />
     <button class="button" type="button" onclick="intake(NumVal.value)">Calculate</button> <br />
-
-    <label class="inputLabel" for="Results">Results: </label><span id="Results">---</span>
+    <label class="inputLabel" for="RstFmt">Formatted Output: </label></span> <input type="checkbox" id="RstFmt" name="RstFmt" checked="checked" /> <br />
+    <br />
+    <label class="inputLabel" for="Results">Results: </label><span class="result" id="Results">---</span>
 </body>
 
 </html>
